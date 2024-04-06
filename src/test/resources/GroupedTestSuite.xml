@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GroupedTestSuite">
+    <test name="AddTests">
+        <groups>
+            <run>
+                <include name="addTests"/>
+                <exclude name="removeTests"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.StudentExcelServiceTest"/>
+        </classes>
+    </test>
+</suite>
